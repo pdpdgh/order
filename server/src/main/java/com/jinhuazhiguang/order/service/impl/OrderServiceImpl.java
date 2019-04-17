@@ -5,8 +5,6 @@ import com.jinhuazhiguang.product.common.ProductInfoOutput;
 import com.jinhuazhiguang.product.common.DecreaseStockInput;
 import com.jinhuazhiguang.order.dataobject.OrderDetail;
 import com.jinhuazhiguang.order.dataobject.OrderMaster;
-import com.jinhuazhiguang.order.dataobject.ProductInfo;
-import com.jinhuazhiguang.order.dto.CartDTO;
 import com.jinhuazhiguang.order.dto.OrderDTO;
 import com.jinhuazhiguang.order.enums.OrderStatusEnum;
 import com.jinhuazhiguang.order.enums.PayStatusEnum;

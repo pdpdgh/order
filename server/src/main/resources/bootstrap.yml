@@ -23,9 +23,8 @@ spring:
       discovery:
         enabled: true
         service-id: CONFIG
-      profile: test
-  rabbitmq:
-    host: 192.168.99.100
-    port: 5672
-    username: admin
-    password: admin
+      profile: dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
