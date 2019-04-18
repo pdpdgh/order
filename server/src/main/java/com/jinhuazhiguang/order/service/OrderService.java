@@ -13,4 +13,9 @@ public interface OrderService {
     * @Desc : 创建订单
     */
     OrderDTO create(OrderDTO orderDTO);
+
+    /**
+    * @Desc : 完结订单（只能卖家操作）
+    */
+    OrderDTO finish(String orderId);
 }
