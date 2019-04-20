@@ -24,6 +24,13 @@ spring:
         enabled: true
         service-id: CONFIG
       profile: dev
+  zipkin:
+    base-url: http://192.168.99.100:9411/
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      probability: 1
 eureka:
   client:
     service-url:
@@ -34,12 +41,15 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 1000
+            timeoutInMilliseconds: 3000
     getProductInfoList:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 1000
+            timeoutInMilliseconds: 3000
 feign:
   hystrix:
     enabled: true
+logging:
+  level:
+    org.springframework.cloud.netflix.feign: debug
